@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Goncalo Miranda Portfolio" />
+    <link rel="icon" type="image/x-icon" href="/laptop.svg" />
+    <link rel="canonical" href="https://www.goncalomiranda.dev" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Goncalo Miranda</title>
@@ -28,9 +31,9 @@
           <li class="nav__list-item">
             <a class="link link--nav" href="#skills">Skills</a>
           </li>
-          <!-- <li class="nav__list-item">
+          <li class="nav__list-item">
             <a class="link link--nav" href="#contact">Contact</a>
-          </li> -->
+          </li>
         </ul>
 
         <button type="button" aria-label="toggle theme" class="btn btn--icon">
@@ -138,12 +141,13 @@
         <ul class="skills__list">
           <li class="skills__list-item btn btn--plain">HTML</li>
           <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">Bootstrap</li>
           <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">Bootstrap</li>
           <li class="skills__list-item btn btn--plain">Node</li>
-          <li class="skills__list-item btn btn--plain">Springboot</li>
+          <li class="skills__list-item btn btn--plain">Spring Boot</li>
           <li class="skills__list-item btn btn--plain">Mulesoft</li>
           <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">DevOps</li>
           <li class="skills__list-item btn btn--plain">CI/CD</li>
         </ul>
       </section>
@@ -155,6 +159,24 @@
           <span class="btn btn--outline">Email me</span>
         </a>
       </section> -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <form id="contactForm" action="/send-email" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--outline">Send Message</button>
+        </form>
+      </section>
 
     </main>
 
@@ -171,7 +193,9 @@
         </a>
       </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/contactform.js"></script>
+
   </body>
 </html>

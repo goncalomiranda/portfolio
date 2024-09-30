@@ -411,3 +411,49 @@
       display: none;
     }
   }
+
+/*===============
+  form styles
+===============*/
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: var(--clr-primary);
+    outline: none;
+  }
+  
+  /* .contact-form {
+    background-color: white; 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+  } */
+
+  .contact-form {
+    /* background-color: white; */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    width: 80%; /* Set the width of the form */
+    max-width: 600px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Center the form */
+  }
