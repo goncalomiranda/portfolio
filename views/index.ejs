@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Goncalo Miranda Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Goncalo Miranda</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="#" class="link">GM.DEV</a>
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <!-- <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li> -->
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Gonçalo Miranda.</span></h1>
+        <h2 class="about__role">Software Engineer.</h2>
+        <p class="about__desc">
+          I am a software engineer specializing in creating innovative, scalable
+          solutions using modern technologies. With expertise in front-end and
+          back-end development, I design and build robust web applications,
+          APIs, and digital tools tailored to meet client needs.
+        </p>
+
+        <div class="about__contact center">
+          <a href="gsm_resume.pdf">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/goncalomiranda"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/gon%C3%A7alo-miranda-91626612/
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>LVF Project</h3>
+            <p class="project__description">
+              I created a responsive, user-friendly website for a mortgage broker, simplifying client interaction and improving access to financial services through a streamlined interface.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Bootstrap 5</li>
+              <li class="project__stack-item">Node</li>
+            </ul>
+
+            <a
+              href="https://www.lvf.pt"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>GoPri</h3>
+            <p class="project__description">
+              I co-founded GoPri, where we empower businesses with expert web development, innovative digital solutions, and impactful marketing to drive sustainable growth.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">JavaScript</li>
+            </ul>
+
+            <a
+              href="https://thegopri.com"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">Bootstrap</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">Node</li>
+          <li class="skills__list-item btn btn--plain">Springboot</li>
+          <li class="skills__list-item btn btn--plain">Mulesoft</li>
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">CI/CD</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <!-- <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:rjshekhar.official@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section> -->
+
+    </main>
+
+    <footer class="footer">
+      <p class="text-white"> Copyright &copy;
+        <script>document.write(new Date().getFullYear());</script> All rights reserved
+      </p>  
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
