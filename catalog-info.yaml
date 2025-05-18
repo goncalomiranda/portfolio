@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: gmiranda-portfolio
+  description: Goncalo Miranda portfolio
+spec:
+  type: website
+  owner: guest
+  lifecycle: production
